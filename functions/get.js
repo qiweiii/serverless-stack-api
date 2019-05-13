@@ -1,5 +1,5 @@
-import * as dynamoDbLib from "./libs/dynamodb-lib";
-import { success, failure } from "./libs/response-lib";
+import * as dynamoDbLib from "../libs/dynamodb-lib";
+import { success, failure } from "../libs/response-lib";
 
 export async function main(event, context) {
   const params = {
@@ -8,8 +8,8 @@ export async function main(event, context) {
     // - 'userId': Identity Pool identity id of the authenticated user
     // - 'noteId': path parameter
     Key: {
-      userId: event.requestContext.identity.cognitoIdentityId,
-      noteId: event.pathParameters.id
+      userid: event.requestContext.identity.cognitoIdentityId,
+      noteid: event.pathParameters.id
     }
   };
 
@@ -22,7 +22,6 @@ export async function main(event, context) {
       return failure({ status: false, error: "Item not found." });
     }
   } catch (e) {
-    console.log(e)
     return failure({ status: false });
   }
 }
