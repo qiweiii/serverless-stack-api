@@ -75,3 +75,7 @@ $ serverless deploy
 ```
 
 backend is ready!
+
+test create a note:
+```bash
+$ serverless invoke local --function create --path mocks/create-event.json
