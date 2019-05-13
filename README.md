@@ -73,9 +73,12 @@ Simply change the service name in serverless.yml, then
 ``` bash
 $ serverless deploy
 ```
-
 backend is ready!
 
-test create a note:
+
+Test create function:
 ```bash
 $ serverless invoke local --function create --path mocks/create-event.json
+```
+
+When testing other functions, rmb to change id in mock events
