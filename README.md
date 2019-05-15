@@ -68,11 +68,12 @@ Serverless Stack is authored and maintained by Frank Wang ([@fanjiewang](https:/
 
 #### Notes by Qiwei
 
-Simply change the service name and able name in serverless.yml, also identityPool name and userPool name and s3 bucket name
+Rmb to change the service name and tableName in serverless.yml, also identityPool name (can only have letters) and userPool name
 
 then
 
 ``` bash
+$ npm install
 $ serverless deploy
 ```
 backend is ready!
