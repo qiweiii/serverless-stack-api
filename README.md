@@ -68,7 +68,7 @@ Serverless Stack is authored and maintained by Frank Wang ([@fanjiewang](https:/
 
 #### Notes by Qiwei
 
-Rmb to change the service name, tableName and function paths in serverless.yml, also change ityPool name (can only have letters), userPool name and dynamoTable attributes
+Rmb to change the service name, tableName and functions in serverless.yml, also change identityPool name (can only have letters), userPool name and dynamoTable attributes
 
 then
 
